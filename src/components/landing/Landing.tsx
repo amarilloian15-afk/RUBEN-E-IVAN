@@ -155,6 +155,12 @@ function Header() {
               {n.label}
             </a>
           ))}
+          <span className={[
+            "text-sm font-medium",
+            scrolled ? "text-foreground/80" : "text-white/90",
+          ].join(" ")}>
+            prueba
+          </span>
         </nav>
 
         <div className="hidden lg:block">
@@ -188,6 +194,9 @@ function Header() {
                 {n.label}
               </a>
             ))}
+            <span className="rounded-lg px-3 py-3 text-sm font-medium text-foreground">
+              prueba
+            </span>
             <Button
               onClick={() => {
                 setOpen(false);
